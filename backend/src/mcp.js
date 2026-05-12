@@ -55,9 +55,9 @@ router.post('/', async (req, res) => {
         }
         const { rowCount } = await db.query('DELETE FROM tasks WHERE id = $1', [id]);
         if (rowCount === 0) {
-          return res.status(404).json({ success: false, error: 'Task not found' });
+          return res.status(404).json({ success: false, error: 'Task not founddd !' });
         }
-        return res.json({ success: true, message: 'Task deleted' });
+        return res.json({ success: true, message: 'Task deleted !!!!' });
       }
 
       default:
