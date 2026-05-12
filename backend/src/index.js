@@ -18,7 +18,7 @@ app.use('/mcp', mcpRoutes);
 
 // Health check
 app.get('/health', (req, res) => {
-    res.json({ status: 'OK', message: 'Backend is running' });
+    res.json({ status: 'OK', message: 'Backend is runningggg successfully' });
 });
 
 app.listen(PORT, () => {
