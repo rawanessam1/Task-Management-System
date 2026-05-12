@@ -37,7 +37,7 @@ function App() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title: newTaskTitle, description: newTaskDesc })
       })
-      if (!response.ok) throw new Error('Failed to create task')
+      if (!response.ok) throw new Error('Failed to create task, unfortunately')
       
       setNewTaskTitle('')
       setNewTaskDesc('')
