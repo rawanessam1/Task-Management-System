@@ -17,7 +17,7 @@ function App() {
   const fetchTasks = async () => {
     try {
       const response = await fetch(`${apiUrl}/api/tasks`)
-      if (!response.ok) throw new Error('Failed to fetch tasks')
+      if (!response.ok) throw new Error('Failed to fetch tasksss !')
       const data = await response.json()
       setTasks(data)
     } catch (err) {
@@ -37,7 +37,7 @@ function App() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title: newTaskTitle, description: newTaskDesc })
       })
-      if (!response.ok) throw new Error('Failed to create task')
+      if (!response.ok) throw new Error('Failed to create task, unfortunately')
       
       setNewTaskTitle('')
       setNewTaskDesc('')
